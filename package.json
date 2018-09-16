@@ -16,7 +16,8 @@
     "atom": ">=1.28.0 <2.0.0"
   },
   "dependencies": {
-    "merge-images": "^1.1.0"
+    "merge-images": "^1.1.0",
+    "sharp": "^0.20.8"
   },
   "configSchema": {
     "openImage": {
@@ -33,6 +34,12 @@
       "type": "boolean",
       "default": true,
       "description": "When enabled the screenshot includes the wrap guide."
+    },
+    "cornerRadius": {
+      "type": "integer",
+      "default": 0,
+      "minimum": 0,
+      "description": "If greater than zero, rounded corners will be applied to the image."
     }
   }
 }
